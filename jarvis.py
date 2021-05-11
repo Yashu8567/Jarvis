@@ -80,6 +80,9 @@ def takeCommand():
     
   elif 'open stackoverflow' in query:
     webbrowser.open("stackoverflow.com")
+    
+  elif 'open github' in query:
+    webbrowser.open("github.com")
    
   # add some songs at a location to use it in music_dir = 'location'
   elif 'play music' in query:
@@ -87,3 +90,4 @@ def takeCommand():
     songs = os.listdir(music_dir)
     print(songs)    
     os.startfile(os.path.join(music_dir, songs[0]))
+  
